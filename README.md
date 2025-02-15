@@ -49,7 +49,7 @@ Este projeto é um extrator de posts do LinkedIn utilizando Selenium WebDriver e
    ollama pull mistral
    ```
 
-## 
+##
 
 1. Clone o repositório:
    ```bash
@@ -61,16 +61,28 @@ Este projeto é um extrator de posts do LinkedIn utilizando Selenium WebDriver e
    ```
 3. Configure o caminho do perfil do Firefox no arquivo `src/config.example.json`.
 
-   ```json
-   {
-     "userProfilePath": {
-       "username": "SEU_USUARIO",
-       "profile": "SEU_PERFIL_FIREFOX"
-     }
-   }
-   ```
+    ```json
+    {
+      "userProfilePath": {
+         "username": "SEU_USUARIO",
+         "profile": "SEU_PERFIL_FIREFOX"
+      }
+    }
+    ```
 
+    **Obs:** Nesse passo você precisa criar um novo perfil no Firefox e fazer login no LinkedIn. Para criar um novo perfil:
+
+    - Abra o Firefox e digite `about:profiles` na barra de endereços.
+    - Clique em "Criar um Novo Perfil".
+    - Siga as instruções do assistente de criação.
+    - Depois de criar o perfil, selecione "Iniciar o Firefox com este perfil".
+    - Faça login no LinkedIn.
+    - Copie o nome do perfil criado e coloque no arquivo de configuração no campo `profile`.
+    - O nome de usuário do Windows deve ser colocado no campo `SEU_USUARIO`.
+
+    - Para iniciar o script o perfil dedicado precisa estar fechado
 4. Renomeie o arquivo `config.example.json` para `config.json`:
+
    ```bash
    mv config.example.json config.json
    ```
