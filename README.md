@@ -78,9 +78,11 @@ Este projeto é um extrator de posts do LinkedIn utilizando Selenium WebDriver e
     - Depois de criar o perfil, selecione "Iniciar o Firefox com este perfil".
     - Faça login no LinkedIn.
     - Copie o nome do perfil criado e coloque no arquivo de configuração no campo `profile`.
-    - O nome de usuário do Windows deve ser colocado no campo `SEU_USUARIO`.
+    - O nome de usuário do Windows deve ser colocado no campo `username`.
 
     - Para iniciar o script o perfil dedicado precisa estar fechado
+
+
 4. Renomeie o arquivo `config.example.json` para `config.json`:
 
    ```bash
